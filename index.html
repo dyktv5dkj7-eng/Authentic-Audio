@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IEM Monitor Setup</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #111;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    .step {
+      background: #1d1d1d;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .step-number {
+      font-size: 14px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      margin: 6px 0 14px;
+      font-size: 21px;
+    }
+
+    .button {
+      display: block;
+      text-align: center;
+      background: #fff;
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    .info {
+      background: #292929;
+      padding: 14px;
+      border-radius: 10px;
+      margin-top: 10px;
+      font-family: monospace;
+      font-size: 17px;
+    }
+
+    .ip {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      background: #444;
+      color: white;
+      padding: 13px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .check {
+      padding: 8px 0;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🎧 IEM Monitor Setup</h1>
+  <div class="subtitle">
+    Follow the three steps below to connect to the monitor console.
+  </div>
+
+  <div class="step">
+    <div class="step-number">Step 1</div>
+    <h2>Download Wing-Q</h2>
+
+    <p>
+      Install the Wing-Q app on your phone.
+    </p>
+
+    <a class="button"
+       href="https://apps.apple.com/app/id1497796330">
+       Download Wing-Q
+    </a>
+  </div>
+
+  <div class="step">
+    <div class="step-number">Step 2</div>
+    <h2>Join the Wi-Fi</h2>
+
+    <p>Connect your phone to:</p>
+
+    <div class="info">
+      <strong>Network:</strong><br>
+      AA TWO
+      <br><br>
+      <strong>Password:</strong><br>
+      authentic
+    </div>
+
+    <p>
+      iPhone users: open Wi-Fi settings and select
+      <strong>AA TWO</strong>.
+    </p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">Step 3</div>
+    <h2>Connect Wing-Q</h2>
+
+    <p>
+      Open Wing-Q and enter this IP address:
+    </p>
+
+    <div class="info ip">
+      192.168.8.4
+    </div>
+
+    <button onclick="copyIP()">
+      📋 Copy IP Address
+    </button>
+
+    <p style="margin-top:18px;">
+      Then you're connected. 🎉
+    </p>
+  </div>
+
+  <div class="step">
+    <div class="step-number">Check</div>
+
+    <div class="check">✓ Wing-Q installed</div>
+    <div class="check">✓ Connected to AA TWO</div>
+    <div class="check">✓ IP address entered</div>
+  </div>
+
+  <footer>
+    IEM Monitor Setup
+  </footer>
+
+</div>
+
+<script>
+function copyIP() {
+  navigator.clipboard.writeText("192.168.8.4");
+  alert("IP address copied!");
+}
+</script>
+
+</body>
+</html>
